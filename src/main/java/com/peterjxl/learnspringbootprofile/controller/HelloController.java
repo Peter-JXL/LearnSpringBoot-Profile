@@ -20,4 +20,12 @@ public class HelloController {
     public String sayHello() {
         return "Hello " + name + color;
     }
+
+    @Value("${MAVEN_HOME}")
+    private String mvn;
+
+    @GetMapping("/mvn")
+    public String getMvn() {
+        return mvn;
+    }
 }
