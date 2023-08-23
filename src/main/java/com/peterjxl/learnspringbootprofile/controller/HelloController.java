@@ -13,7 +13,7 @@ public class HelloController {
     @Autowired
     Color color;
 
-    @Value("${person.name:Peter}") // If person.name is not defined, use "Peter" as default
+    @Value("${perso  n.name:Peter}") // If person.name is not defined, use "Peter" as default
     private String name;
 
     @GetMapping("/")
